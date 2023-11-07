@@ -1,0 +1,150 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+.bb
+{
+    background:url(sbg.jpg);
+    background-size: cover;
+    background-position:top;
+    height: auto;
+    background-repeat: repeat;
+}
+#feed
+{
+    background:linear-gradient(45deg,#ef9494a9,#0000004f);
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+}
+
+.doctor-card
+{
+    width: 400px;
+    height: 250px;
+    background:linear-gradient(45deg,#e45c5cdb,#f3a4a4dc);
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.doctor-card img
+{
+    width: 100px;
+    border-radius: 50%;
+}
+
+.doctor-card h3
+{
+    margin-top: 10px;
+}
+
+
+.doctor-card p
+{
+    margin-top: 10px;
+    width: 95%;
+    text-align: justify;
+}
+
+
+nav
+{
+    width: 84%;
+    margin: auto;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom:1.5px #ffffffc4 solid;
+    margin-bottom: 10px;
+}
+
+.logo{
+	position: relative;
+    display: inline-block;
+	margin-left: 6px;
+    font-size: 40px;
+    font-weight: 800;
+    text-decoration: none;
+	opacity: 0;
+    color: var(--black);
+    animation: slide_left 0.5s linear forwards;
+    animation-delay: 0.2s;
+}
+
+
+@keyframes slide_left 
+{
+    0%
+    {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%
+    {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+
+
+.logo span{
+    color: crimson;
+    transition: all 0.3s ease;
+}
+
+
+
+
+nav ul
+{
+    flex: 1;
+    text-align: right;
+    margin-right: 40px;
+}
+
+nav ul li
+{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li button
+{
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding: 20px;
+    background-color: #000000d6;
+    /* color: #fff; */
+    border-radius: 20px;
+    border: 1.5px #111 solid;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+nav ul li a
+{
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: var(--black);
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+nav ul li a:hover
+{
+    color: crimson;
+}
